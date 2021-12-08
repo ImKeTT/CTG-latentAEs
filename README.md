@@ -44,7 +44,7 @@ List format follows:
 
 <h2 id="supervised">Supervised</h2>
 <h3 id="2021-1">2021</h3>
-1. 
+1. To be continued.. 
 
 <h3 id="2020-1">2020</h3>
 1. **ICLR (ByteDance)** / [Variational Template Machine For Data-to-Text Generation](https://arxiv.org/abs/2002.01127) / **K2T**, use VAE to generate keyword templates, fill pre-assigned keywords into sampled template. / [Code](https://github.com/ReneeYe/VariationalTemplateMachine)
@@ -63,7 +63,7 @@ List format follows:
 2. **ACL (Duke)** / [Improving Disentangled Text Representation Learning with Information-Theoretic Guidance](https://arxiv.org/abs/2006.00693) / **G2T**, explained with variation of information theory. 2 encoders for style and context encoding to produce distinct latents, a discriminator with style label for style latent adversarial learning and a VAE for context learning, concat two latents for controllable generation. / Nan
 
 <h3 id="2019-2">2019</h3>
-1. 
+1. To be continued..
 
 <h3 id="2018-2">2018 and older</h3>
 1. **NIPS (Michigan Univ.)** / [Content preserving text generation with attribute controls](https://arxiv.org/abs/1811.01135) / **G2T**, TL; DR
