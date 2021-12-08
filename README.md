@@ -74,7 +74,7 @@ List format follows:
 
 <h3 id="2020-3">2020</h3>
 1. **NeurIPS (UMBC)** / [A Discrete Variational Recurrent Topic Model without the Reparametrization Trick](https://arxiv.org/abs/2010.12055) / **G2T**, model word-level topic latent codes using continued multiplication approximation, and several auxiliary loss w.r.t. word-level and document-level topic correlation optimization.  / [Code](https://github.com/mmrezaee/VRTM.)
-2. **ICML (MIT)** / [Educating Text Autoencoders: Latent Representation Guidance via Denoising](https://arxiv.org/abs/1905.12777) / **G2T**, add noise at input token level to avoid token-latent irrelevance issue of text latent AEs. / [Code](https://github. com/shentianxiao/text-autoencoders)
+2. **ICML (MIT)** / [Educating Text Autoencoders: Latent Representation Guidance via Denoising](https://arxiv.org/abs/1905.12777) / **G2T**, add noise at input token level to avoid token-latent irrelevance issue of text latent AEs. / [Code](https://github.com/shentianxiao/text-autoencoders)
 3. **ICML(ByteDance)** / [Dispersed Exponential Family Mixture VAEs for Interpretable Text Generation](https://arxiv.org/abs/1906.06719) / **G2T**, mix gaussian model (1 gaussian 1 topic ideally) for VAE prior modeling. / [Code](https://github.com/wenxianxian/demvae)
 4. **ICML (Borealis)** / [On Variational Learning of Controllable Representations for Text without Supervision](https://arxiv.org/abs/1905.11975) / **G2T**, first identify the latent vacancy issue in text VAE, use GloVe and RNN embedding as two distinct latents ($z_1,z_2$). Imposes orthogonal and reconstructing regularization loss on $z_1$. / [Code](https://github.com/BorealisAI/CP-VAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/442182499)
 
