@@ -43,10 +43,13 @@ List format follows:
  *Publication info. / paper and link / TL; DR / Code link (if available) / Chinese Blog Link (if available)* 
 
 <h2 id="supervised">Supervised</h2>
-<h3 id="2021-1">2021</h3>
+
+### 2021
+
 1. To be continued.. 
 
-<h3 id="2020-1">2020</h3>
+### 2020
+
 1. **ICLR (ByteDance)** / [Variational Template Machine For Data-to-Text Generation](https://arxiv.org/abs/2002.01127) / **K2T**, use VAE to generate keyword templates, fill pre-assigned keywords into sampled template. / [Code](https://github.com/ReneeYe/VariationalTemplateMachine)
 2. **Findings (Uber)** / [Controllable Text Generation with Focused Variation](https://arxiv.org/abs/2009.12046) / **K2T**,  consists of 4 encoders (2 for text to style and content, 2 for table text to style and decoder), 2 codebooks (for style and content) and 1 decoder, which concats all four latents for text generation under the paradigm of [VQ-VAE](https://arxiv.org/abs/1711.00937)/ Nan
 
