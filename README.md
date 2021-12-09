@@ -50,8 +50,7 @@ List format follows:
 
 ### 2020
 
-1. **ICLR (ByteDance)** / [Variational Template Machine For Data-to-Text Generation](https://arxiv.org/abs/2002.01127) / **K2T**, use VAE to generate keyword templates, fill pre-assigned keywords into sampled template. / [Code](https://github.com/ReneeYe/VariationalTemplateMachine)
-2. **Findings (Uber)** / [Controllable Text Generation with Focused Variation](https://arxiv.org/abs/2009.12046) / **K2T**,  consists of 4 encoders (2 for text to style and content, 2 for table text to style and decoder), 2 codebooks (for style and content) and 1 decoder, which concats all four latents for text generation under the paradigm of [VQ-VAE](https://arxiv.org/abs/1711.00937)/ Nan
+1. 
 
 ### 2019
 
@@ -68,6 +67,8 @@ List format follows:
 
 1. **ACL (Wuhan Univ.)** / [Pre-train and Plug-in: Flexible Conditional Text Generation with Variational Auto-Encoders](https://arxiv.org/abs/1911.03882) / **G2T**, the first "Plug-and-Play" latent AE consists of a pretrain VAE and $n$ plug-in VAE for $n$ given conditions. / [Code](https://github.com/WHUIR/PPVAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/442201826)
 2. **ACL (Duke)** / [Improving Disentangled Text Representation Learning with Information-Theoretic Guidance](https://arxiv.org/abs/2006.00693) / **G2T**, explained with variation of information theory. 2 encoders for style and context encoding to produce distinct latents, a discriminator with style label for style latent adversarial learning and a VAE for context learning, concat two latents for controllable generation. / Nan
+3. **EMNLP (EPFL)** / [Plug and Play Autoencoders for Conditional Text Generation]() / **G2T**, style transfer task
+4. **ICLR (ByteDance)** / [Variational Template Machine For Data-to-Text Generation](https://arxiv.org/abs/2002.01127) / **K2T**, use VAE to generate keyword templates, fill pre-assigned keywords into sampled template. / [Code](https://github.com/ReneeYe/VariationalTemplateMachine)
 
 ### 2019
 
@@ -82,6 +83,7 @@ List format follows:
 ### 2021
 
 1. **Findings (Manchester Univ.)** / [Disentangling Generative Factors in Natural Language with Discrete Variational Autoencoders](https://arxiv.org/abs/2109.07169) / **G2T**, model every condition into a discrete latent and uses Gumbel softmax for back-prop. Decomposes KL regularization loss into 3 terms related to disentanglement learning like the one described in [TC-VAE](https://arxiv.org/pdf/1802.04942.pdf)  / Nan
+2. **Arxiv (EPFL)** / [Bag-of-Vectors Autoencoders For Unsupervised Conditional Text Generation]() / **G2T**, style transfer task / 
 
 ### 2020
 
@@ -100,3 +102,4 @@ List format follows:
 
 1. **AISTATS (Duke)** / [Topic Compositional Neural Language Model](https://arxiv.org/abs/1712.09783) / **G2T**, a VAE to model topic distributions of documents and a muti-expert LSTM network for controllable generation. / Nan
 2. **Arxiv (UCSB)** / [Dirichlet Variational Autoencoder for Text Modeling](https://arxiv.org/abs/1811.00135) / **G2T**, a plain VAE for sequence modeling ,and a VAE parameterized by Dirichlet for topic modeling whose latent posterior is conditioned on the sequence latent. / Nan
+3. **ICML (CMU)** / [Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](https://arxiv.org/abs/1702.08139) / **G2T**, self-supervised and semi-supervised
