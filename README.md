@@ -23,7 +23,7 @@
     - [2019](#2019-3)
     - [2018 and older](#2018-3)
 
-Papers about controllable text generation (CTG) via latent auto-encoders (AEs). Include some classical style transfer generation methods but without dialogue generation for now.
+Papers about controllable text generation (CTG) via latent auto-encoders (AEs). Mainly focus on open-domain sentence generation with some style transfer generation methods (without dialogue generation for now).
 
 <h1 id="tutorials4latentAEs">Tutorials for Latent AEs</h1>
 Mostly for Variational Auto-Encoders (VAEs)
@@ -43,7 +43,6 @@ List format follows:
  *Publication info. / paper and link / TL; DR / Code link (if available) / Chinese Blog Link (if available)* 
 
 <h2 id="supervised">Supervised</h2>
-
 ### 2021
 
 1. To be continued.. 
@@ -56,9 +55,9 @@ List format follows:
 
 1. **EMNLP (Tsinghua)** / [Long and Diverse Text Generation with Planning-based Hierarchical Variational Model](https://arxiv.org/abs/1908.06605) / **K2T**, 2 latent variable models for keywords assignment plan of every sentence and word generation respectively. / [Code](https://github.com/ZhihongShao/Planning-based-Hierarchical-Variational-Model)
 2. **ICASSP (Alibaba)** / [Improve Diverse Text Generation by Self Labeling Conditional Variational Auto Encoder](https://arxiv.org/abs/1903.10842) / **K2T**, 
+3. **NeurIPS (PKU)** / [Controllable Unsupervised Text Attribute Transfer via Editing Entangled Latent Representation](https://arxiv.org/abs/1905.12926) / **G2T**, style transfer generation
 
 <h2 id="semi-supervised">Semi-Supervised</h2>
-
 ### 2021
 
 1. **Arxiv (Buffalo Univ.)** / [Transformer-based Conditional Variational Autoencoder for Controllable Story Generation](https://arxiv.org/abs/2101.00828) / **G2T**, explored 3 different methods for condition combination with GPT-2 as both encoder and decoder of a text VAE. / Nan
@@ -67,7 +66,7 @@ List format follows:
 
 1. **ACL (Wuhan Univ.)** / [Pre-train and Plug-in: Flexible Conditional Text Generation with Variational Auto-Encoders](https://arxiv.org/abs/1911.03882) / **G2T**, the first "Plug-and-Play" latent AE consists of a pretrain VAE and $n$ plug-in VAE for $n$ given conditions. / [Code](https://github.com/WHUIR/PPVAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/442201826)
 2. **ACL (Duke)** / [Improving Disentangled Text Representation Learning with Information-Theoretic Guidance](https://arxiv.org/abs/2006.00693) / **G2T**, explained with variation of information theory. 2 encoders for style and context encoding to produce distinct latents, a discriminator with style label for style latent adversarial learning and a VAE for context learning, concat two latents for controllable generation. / Nan
-3. **EMNLP (EPFL)** / [Plug and Play Autoencoders for Conditional Text Generation]() / **G2T**, style transfer task
+3. **EMNLP (EPFL)** / [Plug and Play Autoencoders for Conditional Text Generation](https://arxiv.org/abs/2010.02983) / **G2T**, style transfer task
 4. **ICLR (ByteDance)** / [Variational Template Machine For Data-to-Text Generation](https://arxiv.org/abs/2002.01127) / **K2T**, use VAE to generate keyword templates, fill pre-assigned keywords into sampled template. / [Code](https://github.com/ReneeYe/VariationalTemplateMachine)
 
 ### 2019
@@ -76,10 +75,9 @@ List format follows:
 
 ### 2018 and older
 
-1. **NIPS (Michigan Univ.)** / [Content preserving text generation with attribute controls](https://arxiv.org/abs/1811.01135) / **G2T**, TL; DR
+1. **NIPS (Michigan Univ.)** / [Content preserving text generation with attribute controls](https://arxiv.org/abs/1811.01135) / **G2T**, style transfer task
 
 <h2 id="self-supervised">Self-Supervised</h2>
-
 ### 2021
 
 1. **Findings (Manchester Univ.)** / [Disentangling Generative Factors in Natural Language with Discrete Variational Autoencoders](https://arxiv.org/abs/2109.07169) / **G2T**, model every condition into a discrete latent and uses Gumbel softmax for back-prop. Decomposes KL regularization loss into 3 terms related to disentanglement learning like the one described in [TC-VAE](https://arxiv.org/pdf/1802.04942.pdf)  / Nan
@@ -97,6 +95,7 @@ List format follows:
 1. **EMNLP (CAS)** / [A Topic Augmented Text Generation Model: Joint Learning of Semantics and Structural Features](https://aclanthology.org/D19-1513/) / **G2T**, model text semantic and structural features via 2 separate VAEs, concat the distinct latent codes for controllable generation. / Nan
 2. **NAACL (Duke)** / [Topic-Guided Variational Autoencoders for Text Generation](https://arxiv.org/abs/1903.07137) / **G2T**, consists of a latent topic model whose latent is a GMM (each Gaussian is a topic ideally) and modeled by Householder Flow, and a sequence VAE that takes the same latent for generation.  / Nan
 3. **EMNLP (Buffalo Univ.)** / [Implicit Deep Latent Variable Models for Text Generation](https://arxiv.org/abs/1908.11527) / **G2T**, add an auxiliary mutual information between observed data and latent variable based on vanilla text VAE in order to educate a more meaningful latent space. / [Code](https://github.com/fangleai/Implicit-LVM)
+4. **ACL (Nanjing Univ.)** / [Generating Sentences from Disentangled Syntactic and Semantic Spaces](https://arxiv.org/abs/1907.05789) / **G2T**, 
 
 ### 2018 and older
 
