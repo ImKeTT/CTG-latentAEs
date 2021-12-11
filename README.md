@@ -76,6 +76,7 @@ List format follows:
 ### 2018 and older
 
 1. **NIPS (Michigan Univ.)** / [Content preserving text generation with attribute controls](https://arxiv.org/abs/1811.01135) / **G2T**, style transfer task
+2. **ICML (CMU)** / [Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](https://arxiv.org/abs/1702.08139) / **G2T**, self-supervised and semi-supervised
 
 <h2 id="self-supervised">Self-Supervised</h2>
 ### 2021
@@ -96,9 +97,9 @@ List format follows:
 2. **NAACL (Duke)** / [Topic-Guided Variational Autoencoders for Text Generation](https://arxiv.org/abs/1903.07137) / **G2T**, consists of a latent topic model whose latent is a GMM (each Gaussian is a topic ideally) and modeled by Householder Flow, and a sequence VAE that takes the same latent for generation.  / Nan
 3. **EMNLP (Buffalo Univ.)** / [Implicit Deep Latent Variable Models for Text Generation](https://arxiv.org/abs/1908.11527) / **G2T**, add an auxiliary mutual information between observed data and latent variable based on vanilla text VAE in order to educate a more meaningful latent space. / [Code](https://github.com/fangleai/Implicit-LVM)
 4. **ACL (Nanjing Univ.)** / [Generating Sentences from Disentangled Syntactic and Semantic Spaces](https://arxiv.org/abs/1907.05789) / **G2T**, 
+5. **Arxiv (Waterloo Univ.)** / [Stylized Text Generation Using Wasserstein Autoencoders with a Mixture of Gaussian Prior](https://arxiv.org/abs/1911.03828) / **G2T**, 
 
 ### 2018 and older
 
 1. **AISTATS (Duke)** / [Topic Compositional Neural Language Model](https://arxiv.org/abs/1712.09783) / **G2T**, a VAE to model topic distributions of documents and a muti-expert LSTM network for controllable generation. / Nan
 2. **Arxiv (UCSB)** / [Dirichlet Variational Autoencoder for Text Modeling](https://arxiv.org/abs/1811.00135) / **G2T**, a plain VAE for sequence modeling ,and a VAE parameterized by Dirichlet for topic modeling whose latent posterior is conditioned on the sequence latent. / Nan
-3. **ICML (CMU)** / [Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](https://arxiv.org/abs/1702.08139) / **G2T**, self-supervised and semi-supervised
