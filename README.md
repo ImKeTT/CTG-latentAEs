@@ -60,7 +60,7 @@ List format follows:
 <h2 id="semi-supervised">Semi-Supervised</h2>
 ### 2021
 
-1. **Arxiv (Buffalo Univ.)** / [Transformer-based Conditional Variational Autoencoder for Controllable Story Generation](https://arxiv.org/abs/2101.00828) / **G2T**, explored 3 different methods for condition combination with GPT-2 as both encoder and decoder of a text VAE. / Nan
+1. **Arxiv (Buffalo Univ.)** / [Transformer-based Conditional Variational Autoencoder for Controllable Story Generation](https://arxiv.org/abs/2101.00828) / **G2T**, explored 3 different methods for condition combination with GPT-2 as both encoder and decoder of a text VAE. / [Code](https://github.com/fangleai/TransformerCVAE)
 2. **Arxiv (EPFL)** / [Bag-of-Vectors Autoencoders For Unsupervised Conditional Text Generation]() / **G2T**, style transfer task / 
 
 ### 2020
