@@ -56,6 +56,7 @@ List format follows:
 1. **EMNLP (Tsinghua)** / [Long and Diverse Text Generation with Planning-based Hierarchical Variational Model](https://arxiv.org/abs/1908.06605) / **K2T**, 2 latent variable models for keywords assignment plan of every sentence and word generation respectively. / [Code](https://github.com/ZhihongShao/Planning-based-Hierarchical-Variational-Model)
 2. **ICASSP (Alibaba)** / [Improve Diverse Text Generation by Self Labeling Conditional Variational Auto Encoder](https://arxiv.org/abs/1903.10842) / **K2T**, 
 3. **NeurIPS (PKU)** / [Controllable Unsupervised Text Attribute Transfer via Editing Entangled Latent Representation](https://arxiv.org/abs/1905.12926) / **G2T**, style transfer generation
+4. **Arxiv (Waterloo Univ.)** / [Stylized Text Generation Using Wasserstein Autoencoders with a Mixture of Gaussian Prior](https://arxiv.org/abs/1911.03828) / **G2T**, 
 
 <h2 id="semi-supervised">Semi-Supervised</h2>
 ### 2021
@@ -77,7 +78,7 @@ List format follows:
 ### 2018 and older
 
 1. **NIPS (Michigan Univ.)** / [Content preserving text generation with attribute controls](https://arxiv.org/abs/1811.01135) / **G2T**, style transfer task
-2. **ICML (CMU)** / [Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](https://arxiv.org/abs/1702.08139) / **G2T**, self-supervised and semi-supervised
+2. **ICML (CMU)** / [Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](https://arxiv.org/abs/1702.08139) / **G2T**, self-supervised and semi-supervised generation task
 
 <h2 id="self-supervised">Self-Supervised</h2>
 ### 2021
@@ -88,7 +89,7 @@ List format follows:
 
 1. **NeurIPS (UMBC)** / [A Discrete Variational Recurrent Topic Model without the Reparametrization Trick](https://arxiv.org/abs/2010.12055) / **G2T**, model word-level topic latent codes using continued multiplication approximation, and several auxiliary loss w.r.t. word-level and document-level topic correlation optimization.  / [Code](https://github.com/mmrezaee/VRTM.)
 2. **ICML (MIT)** / [Educating Text Autoencoders: Latent Representation Guidance via Denoising](https://arxiv.org/abs/1905.12777) / **G2T**, add noise at input token level to avoid token-latent irrelevance issue of text latent AEs. / [Code](https://github.com/shentianxiao/text-autoencoders)
-3. **ICML(ByteDance)** / [Dispersed Exponential Family Mixture VAEs for Interpretable Text Generation](https://arxiv.org/abs/1906.06719) / **G2T**, mix gaussian model (1 gaussian 1 topic ideally) for VAE prior modeling. / [Code](https://github.com/wenxianxian/demvae)
+3. **ICML(ByteDance)** / [Dispersed Exponential Family Mixture VAEs for Interpretable Text Generation](https://arxiv.org/abs/1906.06719) / **G2T**, mix exponential family model (1exponential distribution for 1 topic ideally) for VAE prior modeling. / [Code](https://github.com/wenxianxian/demvae)
 4. **ICML (Borealis)** / [On Variational Learning of Controllable Representations for Text without Supervision](https://arxiv.org/abs/1905.11975) / **G2T**, first identify the latent vacancy issue in text VAE, use GloVe and RNN embedding as two distinct latents ($z_1,z_2$). Imposes orthogonal and reconstructing regularization loss on $z_1$. / [Code](https://github.com/BorealisAI/CP-VAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/442182499)
 
 ### 2019
@@ -97,7 +98,6 @@ List format follows:
 2. **NAACL (Duke)** / [Topic-Guided Variational Autoencoders for Text Generation](https://arxiv.org/abs/1903.07137) / **G2T**, consists of a latent topic model whose latent is a GMM (each Gaussian is a topic ideally) and modeled by Householder Flow, and a sequence VAE that takes the same latent for generation.  / Nan
 3. **EMNLP (Buffalo Univ.)** / [Implicit Deep Latent Variable Models for Text Generation](https://arxiv.org/abs/1908.11527) / **G2T**, add an auxiliary mutual information between observed data and latent variable based on vanilla text VAE in order to educate a more meaningful latent space. / [Code](https://github.com/fangleai/Implicit-LVM)
 4. **ACL (Nanjing Univ.)** / [Generating Sentences from Disentangled Syntactic and Semantic Spaces](https://arxiv.org/abs/1907.05789) / **G2T**, 
-5. **Arxiv (Waterloo Univ.)** / [Stylized Text Generation Using Wasserstein Autoencoders with a Mixture of Gaussian Prior](https://arxiv.org/abs/1911.03828) / **G2T**, 
 
 ### 2018 and older
 
