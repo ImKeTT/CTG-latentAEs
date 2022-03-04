@@ -59,17 +59,23 @@ List format follows:
 4. **Arxiv (Waterloo Univ.)** / [Stylized Text Generation Using Wasserstein Autoencoders with a Mixture of Gaussian Prior](https://arxiv.org/abs/1911.03828) / **G2T**, 
 
 <h2 id="semi-supervised">Semi-Supervised</h2>
+### 2022
+
+1. **ICML (Monash)** / [Variational Autoencoder with Disentanglement Priors for Low-Resource Task-Specific Natural Language Generation]() / **G2T**
+
 ### 2021
 
 1. **Arxiv (Buffalo Univ.)** / [Transformer-based Conditional Variational Autoencoder for Controllable Story Generation](https://arxiv.org/abs/2101.00828) / **G2T**, explored 3 different methods for condition combination with GPT-2 as both encoder and decoder of a text VAE. / [Code](https://github.com/fangleai/TransformerCVAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/446370783)
 2. **Arxiv (EPFL)** / [Bag-of-Vectors Autoencoders For Unsupervised Conditional Text Generation]() / **G2T**, style transfer task / 
+3. **NeurIPS (UCSD)** / [A Causal Lens for Controllable Text Generation]() / **G2T**, 
 
 ### 2020
 
 1. **ACL (Wuhan Univ.)** / [Pre-train and Plug-in: Flexible Conditional Text Generation with Variational Auto-Encoders](https://arxiv.org/abs/1911.03882) / **G2T**, the first "Plug-and-Play" latent AE consists of a pretrain VAE and $n$ plug-in VAE for $n$ given conditions. / [Code](https://github.com/WHUIR/PPVAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/442201826)
 2. **ACL (Duke)** / [Improving Disentangled Text Representation Learning with Information-Theoretic Guidance](https://arxiv.org/abs/2006.00693) / **G2T**, explained with variation of information theory. 2 encoders for style and context encoding to produce distinct latents, a discriminator with style label for style latent adversarial learning and a VAE for context learning, concat two latents for controllable generation. / Nan
-3. **EMNLP (EPFL)** / [Plug and Play Autoencoders for Conditional Text Generation](https://arxiv.org/abs/2010.02983) / **G2T**, style transfer task
+3. **EMNLP (EPFL)** / [Plug and Play Autoencoders for Conditional Text Generation](https://arxiv.org/abs/2010.02983) / **G2T**, style transfer task, proposed an 'offset' net to encode 
 4. **ICLR (ByteDance)** / [Variational Template Machine For Data-to-Text Generation](https://arxiv.org/abs/2002.01127) / **K2T**, use VAE to generate keyword templates, fill pre-assigned keywords into sampled template. / [Code](https://github.com/ReneeYe/VariationalTemplateMachine)
+5. **Arxiv (Waterloo Univ)** / [Polarized-VAE: Proximity Based Disentangled Representation Learning for Text Generation](https://arxiv.org/abs/2004.10809) / **G2T**, short paper, style transfer task
 
 ### 2019
 
