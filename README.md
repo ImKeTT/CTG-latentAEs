@@ -62,6 +62,7 @@ List format follows:
 ### 2022
 
 1. **ICML (Monash)** / [Variational Autoencoder with Disentanglement Priors for Low-Resource Task-Specific Natural Language Generation]() / **G2T**, BERT encoder for overall feature extraction and two different MLP encoder for label and content encoding severally. Used prefix-tuning and GPT-2 decoder for zero/few-shot style transfer generation. / Nan
+2. **Arxiv (Monash)** / [Variational Autoencoder with Disentanglement Priors for Low-Resource Task-Specific Natural Language Generation](https://arxiv.org/abs/2202.13363) / **G2T**, TBD / Nan
 
 ### 2021
 
@@ -69,6 +70,7 @@ List format follows:
 2. **Arxiv (EPFL)** / [Bag-of-Vectors Autoencoders For Unsupervised Conditional Text Generation]() / **G2T**, style transfer task / 
 3. **NeurIPS (UCSD)** / [A Causal Lens for Controllable Text Generation]() / **G2T**, the first unified causal framework for text generation under control, introduced Structured Causal Model (SCM) for conditional generation, used counterfactual and intervention causal tools for style transfer and controlled generation tasks respectively. / Nan
 4. **EACL (Waterloo Univ)** / [Polarized-VAE: Proximity Based Disentangled Representation Learning for Text Generation](https://arxiv.org/abs/2004.10809) / **G2T**, style transfer task; proposed to use two separate encoders to encode sentence syntax and semantic information, added a proximity loss (cosine) on latent space to distinguish dissimilar sentences (with different labels) / [Code](https://github.com/vikigenius/prox_vae)
+5. **NeuraIPS (UCSD)** / [A Causal Lens for Controllable Text Generation](https://arxiv.org/abs/2201.09119) / **G2T**, TBD / Nan
 
 ### 2020
 
@@ -76,6 +78,7 @@ List format follows:
 2. **ACL (Duke)** / [Improving Disentangled Text Representation Learning with Information-Theoretic Guidance](https://arxiv.org/abs/2006.00693) / **G2T**, explained with variation of information theory. 2 encoders for style and context encoding to produce distinct latents, a discriminator with style label for style latent adversarial learning and a VAE for context learning, concat two latents for controllable generation. / Nan
 3. **EMNLP (EPFL)** / [Plug and Play Autoencoders for Conditional Text Generation](https://arxiv.org/abs/2010.02983) / **G2T**, style transfer task, proposed an 'offset' net to encode 
 4. **ICLR (ByteDance)** / [Variational Template Machine For Data-to-Text Generation](https://arxiv.org/abs/2002.01127) / **K2T**, use VAE to generate keyword templates, fill pre-assigned keywords into sampled template. / [Code](https://github.com/ReneeYe/VariationalTemplateMachine)
+5. **EMNLP (Microsoft)** / [Optimus: Organizing Sentences via Pre-trained Modeling of a Latent Space](http://arxiv.org/abs/2004.04092) / **G2T**, the FIRST VAE with big pre-trained models (BERT and GPT-2), one of its downstream tasks is bi-class controlled text generation. / [Code](https://github.com/ChunyuanLI/Optimus)
 
 ### 2019
 
