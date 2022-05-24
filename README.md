@@ -43,9 +43,13 @@ List format follows:
  *Publication info. / paper and link / TL; DR / Code link (if available) / Chinese Blog Link (if available)* 
 
 <h2 id="supervised">Supervised</h2>
+### 2022
+
+1. **ACL Findings (Huawei)** / [Controlled Text Generation Using Dictionary Prior in Variational Autoencoders](https://aclanthology.org/2022.findings-acl.10.pdf) / **G2T**, it proposes a discrete latent prior weighted by continuous Dirichelet distribution, [iVAE](https://arxiv.org/abs/1908.11527) KL loss for training. And develops contrastive learning loss for controllable generation, and it used both LSTM and GPT-2 models as encoder&decoder with SoTA language modeling performance. / Nan
+
 ### 2021
 
-1. TBD
+1. **NeurIPS (UCSD)** / [A Causal Lens for Controllable Text Generation](https://arxiv.org/pdf/2201.09119.pdf) / **G2T**, the first unified causal framework for text generation under control, introduced Structured Causal Model (SCM) for conditional generation, used counterfactual and intervention causal tools for style transfer and controlled generation tasks respectively. / Nan
 
 ### 2020
 
@@ -61,16 +65,13 @@ List format follows:
 <h2 id="semi-supervised">Semi-Supervised</h2>
 ### 2022
 
-1. **ICML (Monash)** / [Variational Autoencoder with Disentanglement Priors for Low-Resource Task-Specific Natural Language Generation]() / **G2T**, BERT encoder for overall feature extraction and two different MLP encoder for label and content encoding severally. Used prefix-tuning and GPT-2 decoder for zero/few-shot style transfer generation. / Nan
-2. **Arxiv (Monash)** / [Variational Autoencoder with Disentanglement Priors for Low-Resource Task-Specific Natural Language Generation](https://arxiv.org/abs/2202.13363) / **G2T**, TBD / Nan
+1. **ICML (Monash)** / [Variational Autoencoder with Disentanglement Priors for Low-Resource Task-Specific Natural Language Generation](https://arxiv.org/abs/2202.13363) / **G2T**, BERT encoder for overall feature extraction and two different MLP encoder for label and content encoding severally. Used prefix-tuning and GPT-2 decoder for zero/few-shot style transfer generation. / Nan
 
 ### 2021
 
-1. **Arxiv (Buffalo Univ.)** / [Transformer-based Conditional Variational Autoencoder for Controllable Story Generation](https://arxiv.org/abs/2101.00828) / **G2T**, explored 3 different methods for condition combination with GPT-2 as both encoder and decoder of a text VAE. / [Code](https://github.com/fangleai/TransformerCVAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/446370783)
 2. **Arxiv (EPFL)** / [Bag-of-Vectors Autoencoders For Unsupervised Conditional Text Generation]() / **G2T**, style transfer task / 
-3. **NeurIPS (UCSD)** / [A Causal Lens for Controllable Text Generation]() / **G2T**, the first unified causal framework for text generation under control, introduced Structured Causal Model (SCM) for conditional generation, used counterfactual and intervention causal tools for style transfer and controlled generation tasks respectively. / Nan
 4. **EACL (Waterloo Univ)** / [Polarized-VAE: Proximity Based Disentangled Representation Learning for Text Generation](https://arxiv.org/abs/2004.10809) / **G2T**, style transfer task; proposed to use two separate encoders to encode sentence syntax and semantic information, added a proximity loss (cosine) on latent space to distinguish dissimilar sentences (with different labels) / [Code](https://github.com/vikigenius/prox_vae)
-5. **NeuraIPS (UCSD)** / [A Causal Lens for Controllable Text Generation](https://arxiv.org/abs/2201.09119) / **G2T**, TBD / Nan
+3. **Arxiv (Buffalo Univ.)** / [Transformer-based Conditional Variational Autoencoder for Controllable Story Generation](https://arxiv.org/abs/2101.00828) / **G2T**, explored 3 different methods for condition combination with GPT-2 as both encoder and decoder of a text VAE. / [Code](https://github.com/fangleai/TransformerCVAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/446370783)
 
 ### 2020
 
@@ -87,7 +88,8 @@ List format follows:
 ### 2018 and older
 
 1. **NIPS (Michigan Univ.)** / [Content preserving text generation with attribute controls](https://arxiv.org/abs/1811.01135) / **G2T**, style transfer task
-2. **ICML (CMU)** / [Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](https://arxiv.org/abs/1702.08139) / **G2T**, self-supervised and semi-supervised generation task
+2. **ICML (CMU)** / [Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](https://arxiv.org/abs/1702.08139) / **G2T**, self-supervised and semi-supervised generation task.
+3. **ICML (CMU)** / [Adversarially regularized autoencoders](https://arxiv.org/pdf/1706.04223.pdf) / **G2T**, two-stage training paradigm, first train a auto-encoder, than train a conditional GAN to produce the latent vectors. / [Code](https://github.com/jakezhaojb/ARAE)
 
 <h2 id="self-supervised">Self-Supervised</h2>
 ### 2021
