@@ -66,6 +66,7 @@ List format follows:
 ### 2022
 
 1. **ICML (Monash)** / [Variational Autoencoder with Disentanglement Priors for Low-Resource Task-Specific Natural Language Generation](https://arxiv.org/abs/2202.13363) / **G2T**, BERT encoder for overall feature extraction and two different MLP encoder for label and content encoding severally. Used prefix-tuning and GPT-2 decoder for zero/few-shot style transfer generation. / Nan
+2. **Arxiv (Stanford)** / [Diffusion-LM Improves Controllable Text Generation](https://arxiv.org/abs/2205.14217) / **K2T**, syntactic control over continuous difussion language model in continuous word embedding space (as the latent space and optimized in VAE paradigm) with Plug and Play component. / [Code](https://github.com/XiangLi1999/Diffusion-LM)
 
 ### 2021
 
