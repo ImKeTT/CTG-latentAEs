@@ -60,19 +60,23 @@ List format follows:
 1. **EMNLP (Tsinghua)** / [Long and Diverse Text Generation with Planning-based Hierarchical Variational Model](https://arxiv.org/abs/1908.06605) / **K2T**, 2 latent variable models for keywords assignment plan of every sentence and word generation respectively. / [Code](https://github.com/ZhihongShao/Planning-based-Hierarchical-Variational-Model)
 2. **ICASSP (Alibaba)** / [Improve Diverse Text Generation by Self Labeling Conditional Variational Auto Encoder](https://arxiv.org/abs/1903.10842) / **K2T**, 
 3. **NeurIPS (PKU)** / [Controllable Unsupervised Text Attribute Transfer via Editing Entangled Latent Representation](https://arxiv.org/abs/1905.12926) / **G2T**, style transfer generation
-4. **Arxiv (Waterloo Univ.)** / [Stylized Text Generation Using Wasserstein Autoencoders with a Mixture of Gaussian Prior](https://arxiv.org/abs/1911.03828) / **G2T**, 
+4. **Arxiv (Waterloo Univ.)** / [Stylized Text Generation Using Wasserstein Autoencoders with a Mixture of Gaussian Prior](https://arxiv.org/abs/1911.03828), [Corresponding Thesis Paper](https://uwspace.uwaterloo.ca/bitstream/handle/10012/16757/Ghabussi_Amirpasha.pdf;jsessionid=2418986708437ABDE6DE37FA3DB4A109?sequence=1) / **G2T**, 
 
 <h2 id="semi-supervised">Semi-Supervised</h2>
 ### 2022
 
 1. **ICML (Monash)** / [Variational Autoencoder with Disentanglement Priors for Low-Resource Task-Specific Natural Language Generation](https://arxiv.org/abs/2202.13363) / **G2T**, BERT encoder for overall feature extraction and two different MLP encoder for label and content encoding severally. Used prefix-tuning and GPT-2 decoder for zero/few-shot style transfer generation. / Nan
 2. **Arxiv (Stanford)** / [Diffusion-LM Improves Controllable Text Generation](https://arxiv.org/abs/2205.14217) / **K2T**, syntactic control over continuous difussion language model in continuous word embedding space (as the latent space and optimized in VAE paradigm) with Plug and Play component. / [Code](https://github.com/XiangLi1999/Diffusion-LM)
+3. **ICML (UCLA)** / [Latent Diffusion Energy-Based Model for Interpretable Text Modeling](https://arxiv.org/pdf/2206.05895.pdf) / **G2T**,  use diffusion process on latent space with prior sampling with EBM, variational bayes for latent posterior approximation. Similar paradigm of [S-VAE](https://arxiv.org/pdf/1406.5298.pdf) to deal with labels in semi-supervision. / [Code](https://github.com/yuPeiyu98/LDEBM)
 
 ### 2021
 
-2. **Arxiv (EPFL)** / [Bag-of-Vectors Autoencoders For Unsupervised Conditional Text Generation]() / **G2T**, style transfer task / 
-4. **EACL (Waterloo Univ)** / [Polarized-VAE: Proximity Based Disentangled Representation Learning for Text Generation](https://arxiv.org/abs/2004.10809) / **G2T**, style transfer task; proposed to use two separate encoders to encode sentence syntax and semantic information, added a proximity loss (cosine) on latent space to distinguish dissimilar sentences (with different labels) / [Code](https://github.com/vikigenius/prox_vae)
-3. **Arxiv (Buffalo Univ.)** / [Transformer-based Conditional Variational Autoencoder for Controllable Story Generation](https://arxiv.org/abs/2101.00828) / **G2T**, explored 3 different methods for condition combination with GPT-2 as both encoder and decoder of a text VAE. / [Code](https://github.com/fangleai/TransformerCVAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/446370783)
+1. **Entropy (Wuhan Univ.)** / [A Transformer-Based Hierarchical Variational AutoEncoder Combined Hidden Markov Model for Long Text Generation](https://pdfs.semanticscholar.org/6f91/070dbffffc841cf8734872dbbd96ba8b1bfd.pdf) / **G2T**, long controllable text (passage) generation, use word-level and sentence-level latent variables. Encode the passage title as the latent prior to conduct controllable passage generation. / Nan
+
+2. **Arxiv (EPFL)** / [Bag-of-Vectors Autoencoders For Unsupervised Conditional Text Generation]() / **G2T**, style transfer task / Nan
+3. **EACL (Waterloo Univ.)** / [Polarized-VAE: Proximity Based Disentangled Representation Learning for Text Generation](https://arxiv.org/abs/2004.10809) / **G2T**, style transfer task; proposed to use two separate encoders to encode sentence syntax and semantic information, added a proximity loss (cosine) on latent space to distinguish dissimilar sentences (with different labels) / [Code](https://github.com/vikigenius/prox_vae)
+4. **Arxiv (Buffalo Univ.)** / [Transformer-based Conditional Variational Autoencoder for Controllable Story Generation](https://arxiv.org/abs/2101.00828) / **G2T**, explored 3 different methods for condition combination with GPT-2 as both encoder (w/o causal mask) and decoder of a text VAE. / [Code](https://github.com/fangleai/TransformerCVAE) / [Chinese Blog](https://zhuanlan.zhihu.com/p/446370783)
+5. **Arxiv (UCLA)** / [Latent Space Energy-Based Model of Symbol-Vector Coupling for Text Generation and Classification](https://arxiv.org/pdf/2108.11556.pdf) / **G2T**, use energy-based model to model latent prior and variational bayes for posterior approximation,  use the similar paradigm of [S-VAE](https://arxiv.org/pdf/1406.5298.pdf) to deal with semi-supervised latent learning. / [Code](https://github.com/bpucla/ibebm)
 
 ### 2020
 
@@ -93,6 +97,10 @@ List format follows:
 3. **ICML (CMU)** / [Adversarially regularized autoencoders](https://arxiv.org/pdf/1706.04223.pdf) / **G2T**, two-stage training paradigm, first train a auto-encoder, than train a conditional GAN to produce the latent vectors. / [Code](https://github.com/jakezhaojb/ARAE)
 
 <h2 id="self-supervised">Self-Supervised</h2>
+### 2022
+
+1. **Arxiv (Tsinghua)** / [AdaVAE: Exploring Adaptive GPT-2s in Variational Auto-Encoders for Language Modeling](https://arxiv.org/abs/2205.05862) / **G2T**, pre-trained GPT-2 as both encoder (w/o causal mask) decoder with adapter tuning method, proposed efficient *Latent Attention* for latent space construction. Conducted linear and arithmetic interpolation for text generation. / [Code](https://github.com/ImKeTT/adavae) / [Chinese Blog](https://zhuanlan.zhihu.com/p/513807583)
+
 ### 2021
 
 1. **Findings (Manchester Univ.)** / [Disentangling Generative Factors in Natural Language with Discrete Variational Autoencoders](https://arxiv.org/abs/2109.07169) / **G2T**, model every condition into a discrete latent and uses Gumbel softmax for back-prop. Decomposes KL regularization loss into 3 terms related to disentanglement learning like the one described in [TC-VAE](https://arxiv.org/pdf/1802.04942.pdf)  / Nan
