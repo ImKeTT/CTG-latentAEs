@@ -3,11 +3,16 @@
 * [CTG via Latent AEs Survey Paper List](#ctgvialatentaes)
 
   - [Supervised](#supervised)
+    
+    - [2021](#2022-1)
+    
     - [2021](#2021-1)
     - [2020](#2020-1)
     - [2019](#2019-1)
     
   - [Semi-Supervised](#semi-supervised)
+  
+    - [2021](#2022-2)
   
     - [2021](#2021-2)
   
@@ -18,6 +23,8 @@
   
   - [Self-Supervised](#self-supervised)
   
+    - [2022](#2022-3)
+    
     - [2021](#2021-3)
     - [2020](#2020-3)
     - [2019](#2019-3)
